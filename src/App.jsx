@@ -1,15 +1,16 @@
 import reactLogo from './assets/react.svg'
 import LateralEsquerda from './Componentes/LateralEsquerda'
 import './App.css'
+import ConteudoEsquerdo from './Componentes/ConteudoEsquerdo'
 
 export default function App() {
 
   return (
     <main>
-      <LateralEsquerda />
+      <ConteudoEsquerdo />
       <div className='ConteudoCentral'>
         <div className='Stories'></div>
-        <p>Conteúdo Central</p>
+        <h1>Conteúdo</h1>
       </div>
       <div className='LateralDireita'>
         <p>Lateral Direita</p>

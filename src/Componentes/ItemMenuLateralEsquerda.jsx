@@ -1,7 +1,8 @@
-export default function ItemMenuLateralEsquerda () {
+export default function ItemMenuLateralEsquerda (props) {
     return (
-        <span>
-            Exemplo
-        </span>
+        <li>
+            <span className="iconeSimples">{props.icone}</span>
+            <span>{props.texto}</span>
+        </li>
     )
 }
