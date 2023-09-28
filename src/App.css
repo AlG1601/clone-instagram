@@ -22,24 +22,26 @@ main {
 
 .ConteudoEsquerdo {
   background: var(--white);
-  border: 2px solid var(--cinza-instagram);
+  border-right: 1px solid var(--cinza-instagram);
   height: 100vh;
-  width: 20vw;
+  width: 13vw;
 }
 
 .ConteudoDireito {
   background: var(--white);
   height: 100vh;
-  width: 15vw;
+  width: 22vw;
 }
 
 .ConteudoCentral {
+  display: flex;
+  justify-content: center;
   background: var(--white);
   height: 100vh;
-  width: 65vw;
+  width: 35vw;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 200px) {
   .ConteudoDireito{
     display: none;
   }
@@ -47,4 +49,8 @@ main {
   .ConteudoEsquerdo{
     width: 5vw;
   }
+}
+
+li {
+  
 }
