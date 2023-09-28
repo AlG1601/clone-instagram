@@ -10,6 +10,7 @@ import imgPerfil from "../img/gab.jpeg";
 import logo from "../img/logo-ins.png";
 
 var icons = {'font-size': "24px"};
+var prlogo = {'width': '133px', 'margin': '4px, 0px', 'padding': '12px'}
 export default function ConteudoEsquerdo () {
 
     return (
@@ -18,9 +19,9 @@ export default function ConteudoEsquerdo () {
         <div>
             <div className="menu">
                 <ul>
-                    <ItemMenuLateralEsquerda icone={<img src={logo} width={"103px"} />} />
-                    <ItemMenuLateralEsquerda icone={<AiFillHome style={icons} />} texto="Home" />
-                    <ItemMenuLateralEsquerda icone={<HiMagnifyingGlass style={icons} />} texto="Busca" />
+                    <ItemMenuLateralEsquerda icone={<img src={logo} style={prlogo}  />} />
+                    <ItemMenuLateralEsquerda icone={<AiFillHome style={icons} />} texto="Página inicial" />
+                    <ItemMenuLateralEsquerda icone={<HiMagnifyingGlass style={icons} />} texto="Pesquisar" />
                     <ItemMenuLateralEsquerda icone={<MdOutlineExplore style={icons} />} texto="Explorar" />
                     <ItemMenuLateralEsquerda icone={<BiMoviePlay style={icons} />} texto="Reels" />
                     <ItemMenuLateralEsquerda icone={<TbSend style={icons} />} texto="Mensagens" />

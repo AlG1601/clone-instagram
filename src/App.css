@@ -52,5 +52,12 @@ main {
 }
 
 li {
-  
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin: 4px 0px;
+}
+
+.text{
+  padding-left: 16px;
 }
