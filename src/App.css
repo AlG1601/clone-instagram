@@ -1,3 +1,13 @@
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --cinza-instagram: #dbdbdb;
+  --gustavo: #ff3399;
+  --primaria: #336699;
+  --secundaria: #fc3789;
+  --cinza-desabilitado: #fc3789;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,22 +17,34 @@
 
 main {
   display: flex;
+  background: var(--white);
 }
 
-.LateralEsquerda {
-  background: #333;
+.ConteudoEsquerdo {
+  background: var(--white);
+  border: 2px solid var(--cinza-instagram);
   height: 100vh;
   width: 20vw;
 }
 
-.LateralDireita {
-  background: #336699;
+.ConteudoDireito {
+  background: var(--white);
   height: 100vh;
   width: 15vw;
 }
 
 .ConteudoCentral {
-  background: #669933;
+  background: var(--white);
   height: 100vh;
   width: 65vw;
+}
+
+@media (max-width: 800px) {
+  .ConteudoDireito{
+    display: none;
+  }
+
+  .ConteudoEsquerdo{
+    width: 5vw;
+  }
 }
