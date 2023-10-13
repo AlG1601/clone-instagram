@@ -1,8 +1,10 @@
 export default function ItemMenuLateralEsquerda (props) {
     return (
-        <li>
-            <span className="iconeSimples">{props.icone}</span>
-            <span className="text">{props.texto}</span>
-        </li>
+        <a href={props.link} className="Link-menu">
+            <li>
+                <span className="iconeSimples">{props.icone}</span>
+                <span className={`text ${props.type}`}>{props.texto}</span>
+            </li>
+        </a>
     )
 }
