@@ -21,7 +21,7 @@ export default function ConteudoEsquerdo () {
             <div>
                 <div className="menu">
                 <a href="#"><img src={logo} style={prlogo} /></a>
-                <ul>
+                <ul style={{'padding':'0'}}>
                     <ItemMenuLateralEsquerda link="www.google.com.br" icone={<AiFillHome style={icons} />} texto="Página inicial" type="Selected" />
                     <ItemMenuLateralEsquerda link="#" icone={<HiMagnifyingGlass style={icons} />} texto="Pesquisar" />
                     <ItemMenuLateralEsquerda link="#" icone={<MdOutlineExplore style={icons} />} texto="Explorar" />
