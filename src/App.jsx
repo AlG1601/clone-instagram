@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css'
 import ConteudoEsquerdo from './Componentes/ConteudoEsquerdo'
 import ConteudoCentral from './Componentes/ConteudoCentral'
+import ConteudoDireito from './Componentes/ConteudoDireito'
 
 
 export default function App() {
@@ -11,13 +12,9 @@ export default function App() {
   return (
     <main>
       <ConteudoEsquerdo />
-      <ConteudoCentral />
-      {/* <div className='ConteudoCentral'>
-        <div className='Stories'></div>
-        <div>Conteúdo</div>
-      </div> */}
-      <div className='ConteudoDireito'>
-        <p>Lateral Direita</p>
+      <div className='d-flex centro-direito'>
+        <ConteudoCentral />
+        <ConteudoDireito />
       </div>
     </main>
   )

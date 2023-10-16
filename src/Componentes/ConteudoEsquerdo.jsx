@@ -15,7 +15,7 @@ var prlogo = {'width': '133px', 'margin': '4px, 0px', 'padding': '12px'}
 export default function ConteudoEsquerdo () {
 
     return (
-    <div className="ConteudoEsquerdo">
+    <div className="ConteudoEsquerdo fixo">
         <div className="Left-container">
             <div className="wrapLogo"></div>
             <div>

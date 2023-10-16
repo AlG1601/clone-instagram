@@ -4,6 +4,7 @@ import { LiaBookmark } from "react-icons/lia"
 import comment from "../../public/comment.png"
 import imgPerfil from "../img/gab.jpeg";
 import BtnPost from "./BtnPost";
+import { HiOutlineEmojiHappy } from 'react-icons/hi'
 
 
 export default function CardCentral() {
@@ -55,11 +56,12 @@ export default function CardCentral() {
                     <p className="card-text"><span>Gabriel Augusto</span> Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
                     <div className="comentarios">
-                        <span>Comentários 1</span>
-                        <span>Comentários 2</span>
-                        <span>Comentários 3</span>
-                        <span>Comentários 4</span>
-                        <span>Comentários 5</span>
+                        <span className="all-comments">Ver todos os 10 comentários</span>
+                    </div>
+
+                    <div class="input-group mb-2">
+                        <input type="text" className="form-control border-0 custom-input" placeholder="Adicione um comentário..." />
+                        <span><HiOutlineEmojiHappy style={{'color':'#969696', 'font-size':'18px'}} /></span>
                     </div>
 
                     {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
