@@ -1,21 +1,11 @@
-import imgPerfil from "../img/gab.jpeg";
+import ConteudoDireitoSugestao from "./ConteudoDireitoSugestao";
 
 export default function ConteudoDireito() {
     return (
         <div className='ConteudoDireito'>
             <div className="right-container">
                 <div className="sub-container">
-                    <div className="topo">
-                        <div className="imgPerfilDireito">
-                            <img src={imgPerfil} style={{ 'width': '44px', 'borderRadius': '28px' }} />
-                        </div>
-                        <div className="nameUsers">
-                            <span className="id-user">gab.augustoz</span>
-                            <span className="user">Gabriel Augusto</span>
-                        </div>
-                        <span className="change">Mudar</span>
-
-                    </div>
+                    <ConteudoDireitoSugestao />
                 </div>
 
                 <div className="d-flex info">
@@ -28,11 +18,12 @@ export default function ConteudoDireito() {
 
                 </div>
 
-            <div>
-                <ul>
-                    <li></li>
-                </ul>
-            </div>
+                <div className="mt-3 for-you">
+                    <ConteudoDireitoSugestao />
+                    <ConteudoDireitoSugestao />
+                    <ConteudoDireitoSugestao />
+                    <ConteudoDireitoSugestao />
+                </div>
 
             </div>
         </div>
