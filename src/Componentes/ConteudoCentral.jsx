@@ -24,7 +24,7 @@ export default function ConteudoCentral() {
 
         <div className="ConteudoCentral">
             <div className="d-flex flex-column centro">
-                <div className="Item-stories" style={{ 'margin-bottom': '48px', 'width': '33vw', 'display':'flex' }}>
+                <div className="Item-stories" style={{ 'margin-bottom': '48px', 'width': '33vw', 'display':'flex', 'margin-right': '5px' }}>
                     <ConteudoCentralStories imagem={imgPerfilProa} position="32.7" nome="institut..." />
                     <ConteudoCentralStories imagem={imgPerfilPedro} position="32" nome="junim_p..." />
                     <ConteudoCentralStories imagem={imgPerfilPichau} position="32.7" nome="pichauof..." />

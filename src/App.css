@@ -44,6 +44,7 @@ main {
   background: var(--white);
   height: 100vh;
   width: 22vw;
+  z-index: 1;
 }
 
 .ConteudoCentral {
