@@ -2,17 +2,13 @@ import { FaRegHeart } from "react-icons/fa";
 import { TbSend } from "react-icons/tb";
 import { LiaBookmark } from "react-icons/lia"
 import comment from "../../public/comment.png"
-import imgPerfil from "../img/gab.jpeg";
 import BtnPost from "./BtnPost";
 import { HiOutlineEmojiHappy } from 'react-icons/hi'
 
 
-export default function CardCentral() {
+export default function CardCentral(props) {
     return (
         <article className="borda-inferior">
-
-
-
             <div className="card border-0" style={{ 'width': '468px' }}>
                 <div className="card-header border-0 bg-transparent" style={{ 'padding': '8px 0 8px 0', 'position': 'relative' }}>
                     <div style={{ 'position': 'absolute', 'width': '100%', 'height': '100%', 'top': '0', 'left': '0', 'borderRadius': '50%', 'border': '2.5px solid transparent' }}>
@@ -28,13 +24,13 @@ export default function CardCentral() {
                             </defs>
                         </svg>
                     </div>
-                    <span className="imgPerfil"><img src={imgPerfil} style={{ 'width': '32px', 'borderRadius': '18px' }} /></span>
-                    <span className="user">Gabriel Augusto</span>
-                    <span> • 2 h</span>
+                    <span className="imgPerfil"><img src={props.imagemperfil} style={{ 'width': '32px', 'borderRadius': '18px' }} /></span>
+                    <span className="user">{props.nome}</span>
+                    <span className="time"> • {props.tempo}</span>
                 </div>
 
                 <div className="image">
-                    <img src="/src/img/meme-mala.jpg" className="card-img-top" alt="..." />
+                    <img src={props.imagem} className="card-img-top" alt="..." />
                 </div>
                 <div className="card-body" style={{ 'padding': '0' }}>
 
@@ -53,10 +49,10 @@ export default function CardCentral() {
                         <p>Curtido por <span className="user">Guilherme</span> e <span className="user other-like">Outras pessoas</span></p>
                     </div>
 
-                    <p className="card-text"><span>Gabriel Augusto</span> Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p className="card-text"><span>{props.nome}</span> {props.descricao}</p>
 
                     <div className="comentarios">
-                        <span className="all-comments">Ver todos os 10 comentários</span>
+                        <span className="all-comments">Ver todos os {props.comentarios} comentários</span>
                     </div>
 
                     <div class="input-group mb-2">
