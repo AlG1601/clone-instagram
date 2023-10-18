@@ -14,7 +14,7 @@ export default function CardCentral(props) {
                     <div style={{ 'position': 'absolute', 'width': '100%', 'height': '100%', 'top': '0', 'left': '0', 'borderRadius': '50%', 'border': '2.5px solid transparent' }}>
                         <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
                             <g transform="rotate(5, 50, 50)">
-                                <circle cx="19.7" cy="24.7" r="19.4" stroke="url(#gradiente)" strokeWidth="2" fill="transparent" />
+                                <circle cx="18.8" cy="24.7" r="19.1" stroke="url(#gradiente)" strokeWidth="2" fill="transparent" />
                             </g>
                             <defs>
                                 <linearGradient id="gradiente" x1="0%" y1="100%" x2="100%" y2="0%">
